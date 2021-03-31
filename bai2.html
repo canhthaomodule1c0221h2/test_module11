@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function FromArray(arr, x) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.indexOf(x) === -1) {
+                return arr;
+            } else {
+                let j = arr.indexOf(x);
+                let removeArr = arr.splice(j, 1);
+            }
+        }
+    }
+
+    let arrayTest = [4, 6, 5, 7, 5];
+    let x = 9;
+    document.write(FromArray(arrayTest, x));
+</script>
+
+</body>
+</html>
